@@ -254,12 +254,3 @@ th:
         <p>startsWith : <span th:text="${#strings.startsWith(itdragonStr, 'it')}"/></p>
         <p>contains : <span th:text="${#strings.contains(itdragonStr, 'IT')}"/></p>
     </div>
-
-
-
-
-
-
-
-
-

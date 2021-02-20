@@ -20,7 +20,12 @@ spring:
   profiles:
     active: dev
   thymeleaf:
+    # 是否缓存，开发模式下设置为false，避免改了模板还要重启服务器，线上设置为true，可以提高性能。
     cache: false
+    # prefix：指定模板所在的目录 encoding&content-type：这个大家应该比较熟悉了，与Servlet中设置输出对应属性效果一致。
+    # prefix: classpath:/templates/
+    # encoding: UTF-8
+    # content-type: text/html
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
